@@ -35,9 +35,19 @@ The first step of this algorithm is cleaning the documents within a corpus. This
 After each document has been cleaned, we will need a neat dataset to train any ML model. a simple idea to obtain a dataset from documents is as follows.
 <ol>
   <li> Extract a vocabulary list, Containing of each unique word in the corpus </li>
-  <li> Create a matrix with rows corresponding to documents and columns corresponding to extracted vocabulary. The <i>(i, j)th</i> element of this matrix is set to one if and only if the <i>ith</i> document of corpus contain the <i>jth</i> word of vocabulary.</li>
+  <li> Create a matrix with rows corresponding to documents and columns corresponding to extracted vocabulary.</li>
+  <li> The <i>(i, j)th</i> element of this matrix is set to $TF-IDF(i, j)$. Which is defined as below:</li>
+  <br>
+  $TF-IDF(i, j) = TF(d_i^j) \times IDF(d_i^j)$
+  <br>
+  <br>
+  $TF(d_i^j) = \frac{Frequency \: of \: jth \: word \: of \: ith \: document}{Total \: number \: of \: words \: in \: ith \: document}$
+  <br>
+  <br>
+  $IDF(d_i^j) = log (\frac{Total \: number \: of \: documents \: in \: the \: corpus}{Number \: of \: documents \: which \: contain \: jth \: word \: of \: ith \: document})$
+  
   </ol>
- After this step, we will have a neat dataset with binary features and binary labels. Now we can use any machine learning model we want, to classify this data =)
+ After this step, we will have a neat dataset with numeric features and binary labels. Now we can use any machine learning model we want, to classify this data =)
 
 <h3> Classifying </h3>
   In this code, i used two different models, <b>Random Forest Classifier</b> and <b>Naive Bayes Classifier</b>. The result of training this two models is showed in the notebook. You can also try giving manual reviews and ask each of two models to classify the type of given review.
