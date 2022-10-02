@@ -6,7 +6,7 @@ from <a href="https://www.kaggle.com/">Kaggle</a>.
 
 <h2> Built With </h2>
 <ul>
-  <li> Jupyter Notebook </li>
+  <li> JupyterLab </li>
   <li> Python3 </li>
   <li> NumPy </li>
   <li> Pandas </li>
