@@ -31,11 +31,4 @@ context words using target word vector. In the notebook, the word2vec model is d
 <h2>GloVe</h2>
 GloVe stand for Global Vectors [for Word Representation]. This model sees the global property of each word. <a href="https://nlp.stanford.edu/pubs/glove.pdf">See paper</a>
 <br>
-It builds a co-occurence table (or simply count table) from the words in corpus. Then calculates the number
-of times that words have been in each others context (i.e. they have been close) and puts the calculated numbers in the corresponding elements of table.
-An interesting property of this table is that it is symmetric. This meand the number of times that <i>word_i</i> has been in context of <i>word_j</i> is 
-the same as the number of times <i>word_j</i> has been in context of <i>word_i</i>. After the calculation of count table, we can actually proceed and
-calculate following probability.
-<p align="center"> $P(i | j) = P(word_i \: is \: in \: context \: of \: word_j) =  \frac{X_{i, j}}{X_i}$ </p>
-
-In this equation $X$ refers to the count table and $X_i = \sum_k{X_{i, k}}$.
+This model is an unsupervised learning algorithm developed by Stanford for generating word embeddings by aggregating global word-word co-occurrence matrix from a corpus. In the notebook, the GloVe model is downloaded and explored.
