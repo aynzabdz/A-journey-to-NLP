@@ -58,7 +58,7 @@ In order to extract a feature set from the cleaned sentences, we use a TIFDF-vec
 
 <h2>Model Training</h2>
 After the features are selected and we have a nice numeric dataset, we can use a model to solve this problem. Here a simple classifier
-with 1 hidden layers is chosen. Then we can train the model and interactively chat with the chatbot.
+with 1 hidden layers, Cross Entropy loss and L2 regularization is chosen. Then we can train the model and interactively chat with the chatbot.
 <br>
 <br>
 <br>
