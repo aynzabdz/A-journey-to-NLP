@@ -1,0 +1,119 @@
+{
+    "intents" : [
+        {
+            "tag" : "greeting",
+            
+            "patterns" : ["hi",
+                          "hello",
+                          "hi there!",
+                          "is anyone there?",
+                          "hey",
+                          "are you there?",
+                          "good day!"],
+            
+            "responses" : [ "Oh hey",
+                            "Hello there!",
+                            "Hi. How can i help you?",
+                            "Hey, would you like to be assisted?"]
+        }
+        ,
+        {
+            "tag" : "goodbye",
+            
+            "patterns" : ["bye",
+                          "see you later",
+                          "thanks. Bye",
+                          "goodbye"],
+            
+            "responses" : [ "Thank you for visiting",
+                            "Please visit us again!",
+                            "Have a nice day!",
+                            "See you later",
+                            "Byeee"]
+        }
+        ,
+        {
+            "tag" : "items",
+            
+            "patterns" : [ "so what do you have?",
+                            "what products are available?",
+                            "what do you sell?",
+                            "what can i get?"],
+            
+            "responses" : [ "We sell all kinds of books for all generations",
+                            "We sell whatever a bookworm would love", 
+                            "We have the newest novels.",
+                            "We sell your next favorite book!",
+                            "Books mainly. But you can also find stationery here as well"]
+        }
+        ,
+        {
+             "tag" : "shopping in person",
+            
+            "patterns" : [  "Can i buy in person or only online shopping is available?",
+                            "do you offer in person shopping?"],
+            
+            "responses" : [ "We sell online and in person",
+                            "You can shop online or in person, whichever suits you best", 
+                            "We offer online or in person shopping experience"]           
+            
+        }
+        ,
+        {
+            "tag" : "Reccomendation",
+            
+            "patterns" : ["what should i get?",
+                          "what do you recommend me getting?",
+                          "what is new?",
+                          "what is best selling?",
+                          "recommend me some good books",
+                          "what should i read?"],
+            
+            "responses" : [ "The Hitchhiker's Guide To The Galaxy by Douglas Adams",
+                            "Fahrenheit 451 by Ray Bradbury",
+                            "Insurgent by Veronica Roth",
+                            "The Hunger Games by Suzanne Collins"]
+        }
+        ,
+        {
+            "tag" : "thanks",
+             
+            "patterns":  ["Thanks",
+                          "Thank you",
+                          "That's helpful",
+                          "Thank's a lot!"],
+            
+            "responses": ["Happy to help!",
+                          "Any time!",
+                          "My pleasure"]
+        }
+        ,
+        {
+            "tag" : "payment",
+            
+            "patterns" : [ "how can i pay?",
+                           "do you accept cash?",
+                           "can i pay after i receive my order?"],
+            
+            "responses" : [ "We take paypal, venmo and cash!"]
+        }
+        ,
+        {
+            "tag" : "joke",
+            
+            "patterns" : [ "tell something funny",
+                           "tell me a joke",
+                            "say a prank"],
+            
+            "responses" : [ "Why are books so afraid of their sequels? Because they always come after them!",
+                            "What did the man say when a book fell on his head? I only have my-shelf to blame!",
+                            "Why is a math book always unhappy? Because it has so many problems!",
+                            "Why should you not write a book on penguins? Because writing a book on paper is so much easier!",
+                            "Why did Shakespeare always write with a pen? Pencils were so confusing to him. 2B or not 2B?",
+                            "Feeling cold? Get a book! You'll still be cold, but at least you'll have a book with you!"]
+            
+        }
+    ]
+    
+    
+}
